@@ -12,5 +12,5 @@ status = True
 
 if status:
     print("Verdadeiro")
-else:
+else:    
     print("Falso")
