@@ -1,5 +1,8 @@
-usuarios = {'samuel':'123','samuca':'124','rod':'125'}
-
+usuarios = {            
+    'samuel':'123',
+    'samuca':'124',
+    'rod':'125'
+}
 
 login = input("qual o seu nome de usuario? ")
 senha = input("qual a senha senha?")
