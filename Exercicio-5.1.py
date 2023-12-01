@@ -4,10 +4,9 @@ usuarios = {
     'rod':'125'
 }
 
-print("Olá, seja bem vindo\nessas são as funções desse sistema;\npara criar um usuario digite: [0]\npara fazer login digite:[1]\npara encerrar o sistema aperte:[2]")
-opcao = input("qual função voce deseja acessar? ")
-
-       
+print("\nOlá, seja bem vindo\n\nessas são as funções desse sistema:\n[0] para criar um usuario digite\n[1]para fazer login digite\n[2]para encerrar o sistema aperte\n")
+opcao = int(input("qual função voce deseja acessar? "))
+      
 
 def criar_cadastro():
     user = input("informe o seu nome de usuario ")
@@ -25,19 +24,25 @@ def verificacao_de_acesso():
     elif login not in usuarios or senha not in usuarios[login]:
         print ("invalido")
 
-
 def fim():
-    print("fim do sistema")                
-    
-while opcao < 3:
+    print("encerrando sistema")
+      
+
+while opcao < 4:
     if opcao == 0:
         criar_cadastro()
+        break
 
     elif opcao == 1:
         verificacao_de_acesso()
+        break
     
     elif opcao == 2:
         fim()
+        break
 
     else:
-        print("numero de função invalido")    
+        print("numero de função invalido")
+        break
+
+ 
