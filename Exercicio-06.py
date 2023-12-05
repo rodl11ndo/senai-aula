@@ -13,15 +13,21 @@ pedido = {
 def Exibir_menu():
     print("Bem vindo ao Mc donalds!\n")
     print("Menu:\n")
-    print(menu)
+    for key,values in menu.items():
+        print(f'{key} : {values}')
+         
 
-    
+print(Exibir_menu())    
 def Adicionar_item():
     print("Primeiro solicita ao cliente que insira um item do menu")
+    item = input("qual item voce deseja adicionar ao pedido?")
+    if item in menu:
+        pedido['item' : 'values']
+        print(pedido())
     print("Se o item existir em menu, ela adicionara ao pedido.")
     print("Se o item existir em pedido, ela adionara a quantidade desejada pelo cliente")
     print("Caso contrario, ela adicionara o item ao pedido com a quantidade")
-
+print(Adicionar_item())
 
 
 def Remove_item():
