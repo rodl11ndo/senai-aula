@@ -54,12 +54,11 @@ def exibir_pedido():
 
 def calcular_total():
     total = sum(quantidade * menu[item] for item, quantidade in pedido.items())
-    print("TOTAL DO PEDIDO: R${total}\n")
-    print("Qual o metodo de pagamento?\n")
+    print(f"TOTAL DO PEDIDO: R${total:.2f}\n")
     print("[1] - CARTÃO")
     print("[2] - PIX")
     print("[3] - DINHEIRO")
-    metodo = int(input("Qual a forma de pagamento?"))
+    metodo = int(input("Qual a forma de pagamento?\n"))
     while True:
         if metodo == '1':
            print("CARTÃO APROVADO, PAGAMENTO CONCLUIDO") 
@@ -78,7 +77,7 @@ while True:
     print("[6] - Encerrar Pedido")
     
     opcao = input("opção: ")
-
+    
     if opcao == '1':
         exibir_menu()
     elif opcao == '2':
